@@ -1,5 +1,10 @@
+ import React from "react";
+ import ReactDOM from "react-dom" ; 
+
 const div = React.createElement('div' ,{id: "parent_div"} ,
 React.createElement('h1' ,{id:'children_heading'} , "this is a heading")) ; 
+
+
 
 
 const root = ReactDOM.createRoot(document.querySelector('.root')) ; 
