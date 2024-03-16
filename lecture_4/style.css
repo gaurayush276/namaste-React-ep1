@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+     padding :10px ;
+}
+.logo-header{
+    display: flex;
+    justify-content: center;
+    align-items :center ;
+}
+
+.header{
+    display: flex;
+     justify-content: space-between;
+     border: 1px solid aqua;
+     height: 6rem;
+}
+.header ul {
+       padding: 0.5rem;
+       margin: 10px;
+      display: flex;
+       gap : 20px;
+       align-items: center;
+}
+.cusines{
+ width: 150px;
+ height: 150px;
+ padding: 0.5rem;
+}
+
+.search {
+    margin: 1rem;
+    font-size : 2rem ;
+}
+ .cusine-box{
+    display: flex;
+ 
+    justify-content:center;
+    align-items:center ; 
+ }
+ .res-container {
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+ }
+
+.card{
+    width: 200px;
+    border: 1px solid aqua;
+}
+
+.res_name{
+    font-size: 1.5rem;
+}
+
