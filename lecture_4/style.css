@@ -25,14 +25,17 @@
 .header ul {
        padding: 0.5rem;
        margin: 10px;
-      display: flex;
-       gap : 20px;
-       align-items: center;
+       
 }
 .cusines{
  width: 150px;
  height: 150px;
  padding: 0.5rem;
+}
+.card ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .search {
@@ -57,6 +60,7 @@
 }
 
 .res_name{
+    text-align: center;
     font-size: 1.5rem;
 }
 
