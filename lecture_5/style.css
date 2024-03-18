@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+     padding :10px ;
+}
+.logo-header{
+    display: flex;
+    justify-content: center;
+    align-items :center ;
+}
+
+.header{
+    display: flex;
+     justify-content: space-between;
+     border: 1px solid aqua;
+     height: 6rem;
+}
+.header ul {
+       padding: 0.5rem;
+       margin: 10px;
+       
+}
+.cusines{
+ width: 150px;
+ height: 150px;
+ padding: 0.5rem;
+}
+.card ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter {
+    padding :20px ;
+    margin: 1rem;
+    font-size : 1rem ;
+    cursor: pointer;
+}
+ .cusine-box{
+    display: flex;
+ 
+    justify-content:center;
+    align-items:center ; 
+ }
+ .res-container {
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+ }
+
+.card{
+    width: 200px;
+    border: 1px solid aqua;
+}
+
+.res_name{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
