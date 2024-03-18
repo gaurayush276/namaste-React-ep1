@@ -48,7 +48,7 @@ const Card = ({ resData }) => {
         </div>
     );
 };
-const resList =   [
+let resList =   [
     {
       "info": {
         "id": "359354",
@@ -1850,17 +1850,39 @@ const resList =   [
 ]  ; 
 const Main = () => {
 
+
   return (
       <div className="main">
-          <div className="search">Search</div>
+
+            <button className="filter" onClick={()=>{
+              console.log("button clicked") ;
+              resList = resList.filter((traverse)=>traverse.info.avgRating>4)
+            }}> Top Rated Restaurant</button>
+        
           <div className="res-container">
-              <Card resData={resList[0]} />
+              {/* <Card resData={resList[0]} />
               <Card resData={resList[1]} />
               <Card resData={resList[2]} />
               <Card resData={resList[3]} />
               <Card resData={resList[4]} />
               <Card resData={resList[5]} />
-              <Card resData={resList[6]} />
+              <Card resData={resList[6]} /> */}
+           {resList.map((restaurant)=>(
+            
+// index.js:1 Warning: Each child in a list should have a unique "key" prop.
+
+// Check the render method of `Main`. See https://reactjs.org/link/warning-keys for more information.
+//     at Card (http://localhost:1234/index.6cc34a83.js:3028:17)
+//     at Main
+//     at div
+//     at AppLayout
+// ﻿
+  //  to avoid this warning  use key in which i am giving the id as key
+
+            <Card  key ={restaurant.info.id} resData = {restaurant} /> 
+           ))}
+
+
           </div>
       </div>
   );

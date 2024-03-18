@@ -42,7 +42,7 @@ const Card = ({ resData }) => {
             </div>
             <ul>
                 <li><h1 className="res_name">{resData.info.name}</h1></li>
-                <li>{resData.info.cuisines }</li>
+                <li>{resData.info.cuisines.join(", ") }</li>
                 <li>{resData.info.avgRating}</li>
                 <li>{resData.info.costForTwo}</li>
             </ul>
