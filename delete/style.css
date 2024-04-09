@@ -21,6 +21,7 @@
      justify-content: space-between;
      border: 1px solid aqua;
      height: 6rem;
+     border: 2px solid red;
 }
 .header ul {
        padding: 0.5rem;
@@ -59,23 +60,6 @@
 .card{
     width: 200px;
     border: 1px solid aqua;
-  
-}
-.active{
-    animation-name: flip;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: 1;
-}
-@keyframes flip {
-    0%{
-        transform: rotate(0);
-    }
-    100%{
-        transform: rotate(180deg) ;
-        opacity: 0;
-    }
-    
 }
 
 .res_name{

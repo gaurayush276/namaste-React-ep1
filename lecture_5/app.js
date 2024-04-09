@@ -51,6 +51,7 @@ const Card = ({ resData }) => {
 const Main = () => {
 
     // state variable
+    // first argument is the initial one and second one is the modified one 
     let [resList, setresList] = useState(  [{
         "info": {
           "id": "359354",
@@ -286,8 +287,10 @@ const Main = () => {
 
             <button className="filter" onClick={()=>{
               console.log("button clicked") ;
+              console.log(resList) ; 
               const filtered = resList.filter((traverse)=>traverse.info.avgRating>4)
-              setresList(filtered) ; 
+              setresList(filtered  ) ; 
+            
             }}> Top Rated Restaurant</button>
         
           <div className="res-container">
